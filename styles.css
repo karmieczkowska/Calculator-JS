@@ -8,16 +8,23 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: black;
+    background-color: gray;
 }
 
 .calculator {
-    margin: 25px;
+    background-color: black;
+    margin: auto;
+    max-width: 300px;
+    max-height: 500px;
+    padding: 15px;
     display: grid;
+    position: relative;
+    top: 50px;
     justify-content: center;
     align-content: center;
     grid-template-columns: repeat(4, 70px);
     grid-template-rows: minmax(120px, auto) repeat(5, 70px);
+    border-radius: 10px;
 }
 
 .result {
@@ -29,7 +36,8 @@ body {
     padding: 20px;
     word-wrap: break-word;
     word-break: break-all;
-
+    background-color: rgb(43, 43, 43);
+    margin-bottom: 10px;
 }
 
 .previous {
@@ -63,6 +71,6 @@ button.zero {
     padding-right: 90px;
 }
 
-button:hover, button:focus {
+button:hover {
     background: rgba(185, 185, 185, 0.8);
 }
